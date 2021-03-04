@@ -82,7 +82,7 @@ source /usr/local/share/chruby/auto.sh
 # Git stuff
 alias gpf="git push --force-with-lease"
 
-export EDITOR="code --wait"
+export EDITOR="nano"
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 

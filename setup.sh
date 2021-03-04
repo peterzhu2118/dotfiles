@@ -1,3 +1,9 @@
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Setup zshrc
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
 # Nice things to have
 sudo apt install -y htop
 
@@ -13,7 +19,7 @@ cd ..
 rm -rf chruby-0.3.9.tar.gz chruby-0.3.9
 
 # ruby-install
-wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/ruby-install/archive/v0.8.1.tar.gz
+wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/rubyw, -install/archive/v0.8.1.tar.gz
 tar -xzvf ruby-install-0.8.1.tar.gz
 cd ruby-install-0.8.1/
 sudo make install
@@ -22,9 +28,3 @@ rm -rf ruby-install-0.8.1.tar.gz ruby-install-0.8.1
 
 # Ruby 2.7.2
 ruby-install ruby 2.7.2
-
-# Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# Setup zshrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
