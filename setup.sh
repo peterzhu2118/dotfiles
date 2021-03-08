@@ -7,6 +7,8 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 # Install vim
 sudo apt install -y vim universal-ctags
 # Setup vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 vim -E -s -c "source ~/.vimrc" +PlugInstall -c ":qa!"
 
