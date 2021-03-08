@@ -4,6 +4,15 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 # Setup zshrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
+# Install vim
+sudo apt install -y vim universal-ctags
+# Setup vim
+ln -sf ~/dotfiles/.vimrc ~/.vimrc
+vim -E -s -c "source ~/.vimrc" +PlugInstall -c ":qa!"
+
+# Setup global gitignore
+git config --global core.excludesFile ~/dotfiles/.gitignore
+
 # Nice things to have
 sudo apt install -y htop
 
