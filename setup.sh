@@ -5,7 +5,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
 # Install vim
-sudo apt install -y vim universal-ctags
+sudo apt install -y vim universal-ctags ripgrep
 # Setup vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -39,3 +39,4 @@ rm -rf ruby-install-0.8.1.tar.gz ruby-install-0.8.1
 
 # Ruby 2.7.2
 ruby-install ruby 2.7.2
+

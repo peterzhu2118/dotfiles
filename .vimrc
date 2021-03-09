@@ -7,6 +7,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'qpkorr/vim-bufkill'
 Plug 'gryf/wombat256grf'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
@@ -54,12 +55,13 @@ augroup CShenanigans
         \ set tabstop=8 shiftwidth=4 smarttab expandtab |
 augroup END
 
+" nerdcommenter
+let g:NERDDefaultAlign = "left"
+
 let mapleader="\<Space>"
 
 " Window switching shortcuts
 map <C-h> <C-w>h
-map <C-j> qpkorr/vim-bufkill<C-w>j
-map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 nnoremap <CR> :noh<CR><CR>
@@ -70,6 +72,7 @@ nnoremap <leader>f :Files<CR>
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>t :Tags<CR>
+nnoremap <leader>p :Rg<CR>
 
 " Close buffer
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -84,4 +87,12 @@ noremap ' }
 " swap up and down
 noremap j k
 noremap k j
+
+" nerdcommenter
+inoremap <C-/> <C-o><leader>cc
+nnoremap <C-/> <leader>cc
+vnoremap <C-/> <leader>cc
+
+" delete word in insert mode
+inoremap <C-BS> <C-W>
 
