@@ -10,7 +10,7 @@ sudo apt install -y vim universal-ctags ripgrep
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-vim -E -s -c "source ~/.vimrc" +PlugInstall -c ":qa!"
+vim -E +PlugInstall +visual +qall
 
 # Setup global gitignore
 git config --global core.excludesFile ~/dotfiles/.gitignore
@@ -30,7 +30,7 @@ cd ..
 rm -rf chruby-0.3.9.tar.gz chruby-0.3.9
 
 # ruby-install
-wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/rubyw, -install/archive/v0.8.1.tar.gz
+wget -O ruby-install-0.8.1.tar.gz https://github.com/postmodern/ruby-install/archive/v0.8.1.tar.gz
 tar -xzvf ruby-install-0.8.1.tar.gz
 cd ruby-install-0.8.1/
 sudo make install
