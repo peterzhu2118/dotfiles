@@ -21,6 +21,7 @@ set synmaxcol=300
 set ttyfast
 set lazyredraw
 set termguicolors
+set rnu
 
 syntax on
 
@@ -72,7 +73,7 @@ nnoremap <leader>f :Files<CR>
 nnoremap <leader>o :Buffers<CR>
 nnoremap <leader>l :Lines<CR>
 nnoremap <leader>t :Tags<CR>
-nnoremap <leader>p :Rg<CR>
+nnoremap <leader>p :Ag<CR>
 
 " Close buffer
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -89,10 +90,11 @@ noremap j k
 noremap k j
 
 " nerdcommenter
-inoremap <C-/> <C-o><leader>cc
-nnoremap <C-/> <leader>cc
-vnoremap <C-/> <leader>cc
+imap <C-_> <C-o><leader>ci
+nmap <C-_> <Plug>NERDCommenterToggle
+vmap <C-_> <leader>ci
 
-" delete word in insert mode
-inoremap <C-BS> <C-W>
+" highlight trailing whitespace as red
+highlight RedundantSpaces ctermbg=red guibg=red
+match RedundantSpaces /\s\+$/
 

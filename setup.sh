@@ -2,14 +2,14 @@
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Setup zshrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/zshrc ~/.zshrc
 
 # Install vim
-sudo apt install -y vim universal-ctags ripgrep
+sudo apt install -y vim universal-ctags silversearcher-ag
 # Setup vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/vimrc ~/.vimrc
 vim -E +PlugInstall +visual +qall
 
 # Setup global gitignore
