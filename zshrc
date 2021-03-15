@@ -79,6 +79,8 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+alias vim=nvim
+
 # Git stuff
 alias gpf="git push --force-with-lease"
 
@@ -88,5 +90,5 @@ zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
 # MRI debug flags
 export debugflags="-g"
-export optflags="-O0 -DUSE_RVARGC=1 -DRUBY_DEBUG=1"
+export optflags="-DRUBY_DEBUG=1"
 export RUBY_DEVEL="yes"

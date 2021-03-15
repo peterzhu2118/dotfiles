@@ -5,12 +5,13 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 
 # Install vim
-sudo apt install -y vim universal-ctags silversearcher-ag
+sudo apt install -y neovim universal-ctags silversearcher-ag
 # Setup vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -sf ~/dotfiles/vimrc ~/.vimrc
-vim -E +PlugInstall +visual +qall
+curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir ~/.config/nvim
+ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
+nvim -E +PlugInstall +visual +qall
 
 # Setup global gitignore
 git config --global core.excludesFile ~/dotfiles/.gitignore
