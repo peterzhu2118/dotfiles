@@ -49,11 +49,19 @@ set incsearch
 set encoding=utf-8
 set fileencoding=utf-8
 
+set tags+=.git/tags
+
 augroup CShenanigans
   au!
   autocmd BufRead,BufNewFile *.c,*.h
         \ set filetype=c |
         \ set tabstop=8 shiftwidth=4 smarttab expandtab |
+augroup END
+
+" Create dirs on save
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * if expand("<afile>")!~#'^\w\+:/' && !isdirectory(expand("%:h")) | execute "silent! !mkdir -p ".shellescape(expand('%:h'), 1) | redraw! | endif
 augroup END
 
 " nerdcommenter
