@@ -89,6 +89,6 @@ export EDITOR="vim"
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
 # MRI debug flags
-export debugflags="-g"
-export optflags="-DRUBY_DEBUG=1"
-export RUBY_DEVEL="yes"
+#export debugflags="-g"
+#export optflags="-DRUBY_DEBUG=1"
+#export RUBY_DEVEL="yes"
