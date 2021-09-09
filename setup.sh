@@ -11,7 +11,6 @@ curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --c
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 mkdir ~/.config/nvim
 ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
-nvim -E +PlugInstall +visual +qall
 
 # Setup global gitignore
 git config --global core.excludesFile ~/dotfiles/.gitignore
@@ -38,6 +37,6 @@ sudo make install
 cd ..
 rm -rf ruby-install-0.8.1.tar.gz ruby-install-0.8.1
 
-# Ruby 2.7.2
-ruby-install ruby 2.7.2
+# Ruby 3.0.2
+ruby-install ruby 3.0.2
 
