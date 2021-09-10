@@ -20,6 +20,7 @@ sudo apt install -y htop
 
 # Dependencies for MRI development
 sudo apt install -y git ruby autoconf bison gcc make zlib1g-dev libffi-dev libreadline-dev libgdbm-dev libssl-dev
+sudo apt install -y lldb gdb
 
 # chruby
 wget -O chruby-0.3.9.tar.gz https://github.com/postmodern/chruby/archive/v0.3.9.tar.gz
