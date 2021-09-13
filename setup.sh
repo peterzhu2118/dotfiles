@@ -16,7 +16,7 @@ ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 git config --global core.excludesFile ~/dotfiles/.gitignore
 
 # Nice things to have
-sudo apt install -y htop
+sudo apt install -y htop psmisc
 
 # Dependencies for MRI development
 sudo apt install -y git ruby autoconf bison gcc make zlib1g-dev libffi-dev libreadline-dev libgdbm-dev libssl-dev
