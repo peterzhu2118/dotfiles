@@ -15,6 +15,8 @@ ln -sf ~/dotfiles/vimrc ~/.config/nvim/init.vim
 # Setup global gitignore
 git config --global core.excludesFile ~/dotfiles/.gitignore
 
+git config --global user.email "peter@peterzhu.ca"
+
 # Nice things to have
 sudo apt install -y htop psmisc
 
