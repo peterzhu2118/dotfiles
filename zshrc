@@ -84,7 +84,7 @@ alias vim=nvim
 # Git stuff
 alias gpf="git push --force-with-lease"
 
-export EDITOR="vim"
+export EDITOR="nvim"
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
