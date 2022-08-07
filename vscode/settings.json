@@ -1,0 +1,25 @@
+{
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontSize": 15,
+  "editor.wordWrap": "on",
+  "editor.scrollBeyondLastLine": false,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "workbench.list.openMode": "doubleClick",
+
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.scrollback": 1000000,
+
+  "[c]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 1
+}

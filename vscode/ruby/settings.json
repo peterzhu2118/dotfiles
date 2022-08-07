@@ -1,0 +1,10 @@
+{
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "*.y": "c"
+  },
+  "files.exclude": {
+    "build/**": true,
+    "install/**": true
+  }
+}
