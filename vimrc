@@ -87,7 +87,7 @@ nnoremap <leader>p :Ag<CR>
 nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
 
 " ctags
-noremap <leader>rt :!ag -l \| ctags --tag-relative=yes --extras=+f -Rf.git/tags --languages=-javascript,sql -L-<cr><cr>
+noremap <leader>rt :!ag -l \| ctags -R -f.tags -L-<cr><cr>
 
 " remap jumping paragraphs
 noremap ; {
