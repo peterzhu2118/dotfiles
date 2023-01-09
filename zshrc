@@ -76,8 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # Custom configs
 # ============
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+eval "$(rbenv init - zsh)"
 
 alias vim=nvim
 
