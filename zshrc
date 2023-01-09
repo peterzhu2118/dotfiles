@@ -92,7 +92,11 @@ fi
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
-# MRI debug flags
-#export debugflags="-g"
-#export optflags="-DRUBY_DEBUG=1"
-#export RUBY_DEVEL="yes"
+case `uname` in
+  Darwin)
+    source "$( dirname -- "$( readlink -f -- "$0" )" )/macos.zshrc"
+  ;;
+  Linux)
+    source "$( dirname -- "$( readlink -f -- "$0" )" )/linux.zshrc"
+  ;;
+esac
