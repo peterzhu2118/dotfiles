@@ -76,8 +76,6 @@ source $ZSH/oh-my-zsh.sh
 # Custom configs
 # ============
 
-eval "$(rbenv init - zsh)"
-
 alias vim=nvim
 
 # Git stuff
