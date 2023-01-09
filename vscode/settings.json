@@ -18,8 +18,15 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": true
   },
+  "C_Cpp.files.exclude": {
+    "build/**": true,
+    "install/**": true
+  },
+
   "security.workspace.trust.untrustedFiles": "open",
   "editor.inlineSuggest.enabled": true,
   "extensions.ignoreRecommendations": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
 }
