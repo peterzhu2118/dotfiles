@@ -83,7 +83,12 @@ alias vim=nvim
 # Git stuff
 alias gpf="git push --force-with-lease"
 
-export EDITOR="nvim"
+if [ $SSH_CLIENT ]
+then
+  export EDITOR="nvim"
+else
+  export EDITOR="code --wait"
+fi
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
