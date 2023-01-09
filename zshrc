@@ -92,9 +92,9 @@ zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
 case `uname` in
   Darwin)
-    source "$( dirname -- "$( readlink -f -- "$0" )" )/macos.zshrc"
+    source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/macos.zshrc"
   ;;
   Linux)
-    source "$( dirname -- "$( readlink -f -- "$0" )" )/linux.zshrc"
+    source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/linux.zshrc"
   ;;
 esac
