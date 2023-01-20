@@ -90,6 +90,30 @@ fi
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
+chrb() {
+  local version="$1"
+
+  case $version in
+    3.2)
+      version="3.2.0"
+      ;;
+
+    3.1)
+      version="3.1.3"
+      ;;
+
+    3.0)
+      version="3.0.5"
+      ;;
+
+    2.7)
+      version="2.7.7"
+      ;;
+  esac
+
+  rbenv global $version
+}
+
 case `uname` in
   Darwin)
     source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/macos.zshrc"
