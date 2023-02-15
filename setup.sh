@@ -18,8 +18,8 @@ git config --global core.excludesFile ~/dotfiles/.gitignore
 git config --global user.email "peter@peterzhu.ca"
 
 # Nice things to have
-sudo apt install -y htop psmisc
+# sudo apt install -y htop psmisc
 
 # Dependencies for MRI development
-sudo apt install -y git ruby autoconf bison gcc make zlib1g-dev libffi-dev libreadline-dev libgdbm-dev libssl-dev
-sudo apt install -y lldb gdb
+# sudo apt install -y git ruby autoconf bison gcc make zlib1g-dev libffi-dev libreadline-dev libgdbm-dev libssl-dev
+# sudo apt install -y lldb gdb
