@@ -123,7 +123,7 @@ case `uname` in
   ;;
 esac
 
-ZSHRC_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ZSHRC_DIR=$(dirname "$(readlink -f "$0")")
 LOCAL_ZSHRC_FILE=$ZSHRC_DIR/local.zshrc
 if test -f $LOCAL_ZSHRC_FILE; then
   source $LOCAL_ZSHRC_FILE
