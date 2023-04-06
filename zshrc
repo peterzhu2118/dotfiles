@@ -122,3 +122,9 @@ case `uname` in
     source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/linux.zshrc"
   ;;
 esac
+
+ZSHRC_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+LOCAL_ZSHRC_FILE=$ZSHRC_DIR/local.zshrc
+if test -f $LOCAL_ZSHRC_FILE; then
+  source $LOCAL_ZSHRC_FILE
+fi

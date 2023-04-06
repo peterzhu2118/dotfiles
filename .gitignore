@@ -2,3 +2,5 @@
 *.swp
 *.swo
 
+# Local zshrc file
+local.zshrc
