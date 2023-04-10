@@ -114,16 +114,17 @@ chrb() {
   rbenv global $version
 }
 
+DOTFILES_DIR=$(dirname -- "$(readlink -f -- ~/.zshrc)")
+
 case `uname` in
   Darwin)
-    source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/macos.zshrc"
+    source $DOTFILES_DIR/macos.zshrc
   ;;
   Linux)
-    source "$( dirname -- "$( readlink -f -- ~/.zshrc )" )/linux.zshrc"
+    source $DOTFILES_DIR/linux.zshrc
   ;;
 esac
 
-DOTFILES_DIR=$(dirname "$(readlink -f "$0")")
 LOCAL_ZSHRC_FILE=$DOTFILES_DIR/local.zshrc
 if test -f $LOCAL_ZSHRC_FILE; then
   source $LOCAL_ZSHRC_FILE
