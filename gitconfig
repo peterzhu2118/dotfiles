@@ -7,3 +7,5 @@
 	squash = commit --amend -C HEAD
 	st = status
 	pf = push --force-with-lease
+[credential]
+	helper = store
