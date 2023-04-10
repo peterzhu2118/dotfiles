@@ -123,8 +123,8 @@ case `uname` in
   ;;
 esac
 
-ZSHRC_DIR=$(dirname "$(readlink -f "$0")")
-LOCAL_ZSHRC_FILE=$ZSHRC_DIR/local.zshrc
+DOTFILES_DIR=$(dirname "$(readlink -f "$0")")
+LOCAL_ZSHRC_FILE=$DOTFILES_DIR/local.zshrc
 if test -f $LOCAL_ZSHRC_FILE; then
   source $LOCAL_ZSHRC_FILE
 fi

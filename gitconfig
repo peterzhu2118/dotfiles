@@ -1,0 +1,9 @@
+[user]
+	name = Peter Zhu
+	email = peter@peterzhu.ca
+[alias]
+	co = checkout
+	cob = checkout -b
+	squash = commit --amend -C HEAD
+	st = status
+	pf = push --force-with-lease
