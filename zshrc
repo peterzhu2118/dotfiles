@@ -81,7 +81,8 @@ alias vim=nvim
 # Git stuff
 alias gpf="git push --force-with-lease"
 
-if [ $SSH_CLIENT ]
+# Use nvim if in SSH but not in a VSCode terminal
+if [ $SSH_CLIENT ] && [ "$TERM_PROGRAM" != "vscode" ]
 then
   export EDITOR="nvim"
 else
