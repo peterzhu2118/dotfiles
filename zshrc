@@ -129,3 +129,12 @@ LOCAL_ZSHRC_FILE=$DOTFILES_DIR/local.zshrc
 if test -f $LOCAL_ZSHRC_FILE; then
   source $LOCAL_ZSHRC_FILE
 fi
+
+# Disable dev
+if false; then
+  [[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
+
+  [[ -x /opt/homebrew/bin/brew ]] && eval $(/opt/homebrew/bin/brew shellenv)
+
+  [ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+fi
