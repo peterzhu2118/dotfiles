@@ -4,3 +4,5 @@
 
 # Local zshrc file
 local.zshrc
+
+.DS_Store
