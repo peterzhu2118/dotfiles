@@ -9,3 +9,5 @@
 	pf = push --force-with-lease
 [credential]
 	helper = store
+[push]
+	autoSetupRemote = true
