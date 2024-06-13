@@ -95,20 +95,16 @@ chrb() {
   local version="$1"
 
   case $version in
+    3.3)
+      version="3.3.3"
+      ;;
+
     3.2)
-      version="3.2.2"
+      version="3.2.4"
       ;;
 
     3.1)
-      version="3.1.4"
-      ;;
-
-    3.0)
-      version="3.0.5"
-      ;;
-
-    2.7)
-      version="2.7.7"
+      version="3.1.5"
       ;;
   esac
 
