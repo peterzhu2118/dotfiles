@@ -96,7 +96,7 @@ chrb() {
 
   case $version in
     3.3)
-      version="3.3.3"
+      version="3.3.6"
       ;;
 
     3.2)
@@ -110,6 +110,8 @@ chrb() {
 
   rbenv global $version
 }
+
+
 
 DOTFILES_DIR=$(dirname -- "$(readlink -f -- ~/.zshrc)")
 
