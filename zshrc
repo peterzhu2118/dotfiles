@@ -111,9 +111,12 @@ chrb() {
   rbenv global $version
 }
 
-
-
 DOTFILES_DIR=$(dirname -- "$(readlink -f -- ~/.zshrc)")
+
+ruby-git-clean() {
+  git clean -fdx
+  cp -r $DOTFILES_DIR/vscode/ruby $(git rev-parse --show-toplevel)/.vscode
+}
 
 case `uname` in
   Darwin)
