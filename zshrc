@@ -102,6 +102,10 @@ chrb() {
   local version="$1"
 
   case $version in
+    3.4)
+      version="3.4.2"
+      ;;
+
     3.3)
       version="3.3.6"
       ;;
