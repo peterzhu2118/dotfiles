@@ -2,7 +2,7 @@ plugins=(git)
 
 zstyle ':completion:*:complete:*:_dirs:*' matcher-list ''
 
-eval "$(~/.rbenv/bin/rbenv init - zsh)"
+eval "$(rbenv init - zsh)"
 
 chrb() {
   local version="$1"
