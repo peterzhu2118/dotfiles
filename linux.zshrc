@@ -1,7 +1,3 @@
-if [ -f ~/.rbenv/bin/rbenv ]; then
-  eval "$(~/.rbenv/bin/rbenv init - zsh)"
-fi
-
 update-discord() {
   echo -e "Killing Discord"
   # Killing all Discord processes.

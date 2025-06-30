@@ -1,5 +1,3 @@
-eval "$(rbenv init - zsh)"
-
 export PATH="/opt/homebrew/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
