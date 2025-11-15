@@ -14,3 +14,8 @@ update-discord() {
   rm -rf /tmp/discord.deb > /dev/null
   echo -e "Finished"
 }
+
+setup-rr() {
+  sudo insmod ~/src/rr/third-party/zen-pmu-workaround/zen_workaround.ko
+  echo '1' | sudo tee /proc/sys/kernel/perf_event_paranoid
+}
